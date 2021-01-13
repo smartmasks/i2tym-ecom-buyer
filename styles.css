@@ -9289,6 +9289,18 @@ body {
   font: 500 14px "Quicksand", sans-serif !important;
   color: #113c55 !important;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
 button:focus {
   outline: none !important;
 }
@@ -9300,6 +9312,11 @@ button:focus {
 }
 .carousel:focus {
   outline: none;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
